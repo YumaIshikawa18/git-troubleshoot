@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int maxNumber   = 50;  // ← problem2 で 100 に直す
+        int maxNumber   = 100;  // ← problem2 で 100 に直す
         int maxAttempts = 3;   // ← problem2 で 5 に直す
 
         System.out.println("Welcome to GuessGame!"); // ← problem3/problem6 で装飾・追加
