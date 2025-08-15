@@ -10,6 +10,7 @@ public class Main {
         int maxAttempts = 5;   // ← problem2 で 5 に直す
 
         System.out.println("Welcome to GuessGame!"); // ← problem3/problem6 で装飾・追加
+        System.out.println("[Hint] Guess a number between 1 and " + maxNumber + ".");
 
         Random rand = new Random();
         int secret  = rand.nextInt(maxNumber) + 1;
