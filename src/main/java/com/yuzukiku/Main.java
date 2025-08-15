@@ -1,6 +1,8 @@
 package com.yuzukiku;
 
 // C1: skeleton game logic
+import java.io.File;
+import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -32,5 +34,12 @@ public class Main {
 
         System.out.println("Game over. The number was: " + secret);
         // ← problem4 で bonus 機能追加
+        try (Scanner bonus = new Scanner(new File("bonus.txt"))){
+            while (bonus.hasNextLine()) {
+                System.out.println(bonus.nextLine());
+            }
+        } catch (IOException e) {
+            System.out.println("No bonus available.");
+        }
     }
 }
