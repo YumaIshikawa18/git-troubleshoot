@@ -18,11 +18,7 @@
 
 ```bash
 git checkout question0
-<<<<<<< HEAD
 git checkout -b question0-{チームの番号}
-=======
-git checkout -b question0/{チームの番号}
->>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
 
 現状では、Hello World! が表示されるだけです。ここに初期状態のゲームロジック(skeletonタグのついたコミット)を追加したいです。

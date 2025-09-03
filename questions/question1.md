@@ -18,11 +18,7 @@
 
 ```bash
 git checkout question1
-<<<<<<< HEAD
 git checkout -b question1-{チームの番号}
-=======
-git checkout -b question1/{チームの番号}
->>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
 
 現状では、数当てゲームの最大値:50、試行回数:3 になっています。ここを 最大値:100、試行回数:5 に修正したいです。

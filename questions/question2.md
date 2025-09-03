@@ -16,11 +16,7 @@
 
 ```bash
 git checkout question2
-<<<<<<< HEAD
 git checkout -b question2-{チームの番号}
-=======
-git checkout -b question2/{チームの番号}
->>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
 
 現状では、ゲームは動作しますが、ターミナル上にヒントが表示されません。

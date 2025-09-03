@@ -19,11 +19,7 @@
 
 ```bash
 git checkout question4
-<<<<<<< HEAD
 git checkout -b question4-{チームの番号}
-=======
-git checkout -b question4/{チームの番号}
->>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
 
 現在の状態では、正常なゲーム機能に加えて以下の問題があります：

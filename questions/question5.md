@@ -19,11 +19,7 @@
 
 ```bash
 git checkout question5
-<<<<<<< HEAD
 git checkout -b question5-{チームの番号}
-=======
-git checkout -b question5/{チームの番号}
->>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
 
 ブランチの移動が完了したら、mainメソッドの末尾に次の2行を追加してください。ステージングはしないでください。

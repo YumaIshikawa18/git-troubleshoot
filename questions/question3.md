@@ -18,11 +18,7 @@
 
 ```bash
 git checkout question3
-<<<<<<< HEAD
 git checkout -b question3-{チームの番号}
-=======
-git checkout -b question3/{チームの番号}
->>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
 
 現状では、ゲームは動作しますが、ヒント表示とボーナス機能、グッドラックメッセージが不足しています。
