@@ -12,8 +12,8 @@
 ## 事前準備
 `skeleton`タグの状態からスタートするために、以下のbashコマンドを入力してください。
 ```bash
-git checkout skeleton
-git checkout -b question1/{チームの番号}
+git checkout question1
+git checkout -b question1-{チームの番号}
 ```
 現状では、数当てゲームの最大値:50、試行回数:3 になっています。ここを 最大値:100、試行回数:5  に修正したいです。
 また、ボーナス機能も不足しているため、追加したいです。

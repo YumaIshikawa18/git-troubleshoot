@@ -12,8 +12,8 @@
 ## 事前準備
 `fix-attempts`タグの状態からスタートするために、以下のbashコマンドを入力してください。
 ```bash
-git checkout fix-attempts
-git checkout -b question3/{チームの番号}
+git checkout question3
+git checkout -b question3-{チームの番号}
 ```
 現状では、ゲームは動作しますが、ヒント表示とボーナス機能、グッドラックメッセージが不足しています。
 masterブランチには、これら全ての機能が既に実装済みなので、masterの内容をまとめて反映したいです。
