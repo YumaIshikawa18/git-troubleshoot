@@ -13,13 +13,8 @@
 ## 事前準備
 以下のbashコマンドを入力して、作業中の状態を作成してください。
 ```bash
-<<<<<<< HEAD
-git checkout bonus
-git checkout -b question5/{チームの番号}
-=======
 git checkout question5
 git checkout -b question5-{チームの番号}
->>>>>>> e58fcd1 (Change suggestion branch name  (#7))
 ```
 ブランチの移動が完了したら、mainメソッドの末尾に次の2行を追加してください。ステージングはしないでください。
 ```java

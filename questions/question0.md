@@ -12,13 +12,8 @@
 ## 事前準備
 セットアップ状態からスタートするために、以下のbashコマンドを入力してください。
 ```bash
-<<<<<<< HEAD
-git checkout complete-setup
-git checkout -b question0/{チームの番号}
-=======
 git checkout question0
 git checkout -b question0-{チームの番号}
->>>>>>> e58fcd1 (Change suggestion branch name  (#7))
 ```
 現状では、Hello World! が表示されるだけです。ここに初期状態のゲームロジック(skeletonタグのついたコミット)を追加したいです。
 

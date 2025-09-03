@@ -13,13 +13,8 @@
 ## 事前準備
 以下のbashコマンドを入力して、問題のあるコミットを含む状態を作成してください。
 ```bash
-<<<<<<< HEAD
-git checkout goodluck
-git checkout -b question4/{チームの番号}
-=======
 git checkout question4
 git checkout -b question4-{チームの番号}
->>>>>>> e58fcd1 (Change suggestion branch name  (#7))
 ```
 
 現在の状態では、正常なゲーム機能に加えて以下の問題があります：
