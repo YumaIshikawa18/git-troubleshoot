@@ -1,22 +1,33 @@
 # Question 5: git stash & tag（一時退避とリリース管理）
+
 後述の制約条件を守ったうえで、「現在の状態」から「期待する状態」にコードを変更してください。
 
 ## 学習目標
+
 - git stashによる作業中変更の一時退避方法を身に着ける
 - git tagによるリリース管理方法を理解する
 - 実際の開発フローにおける stash の活用を実践する
 
 ## 制約条件
+
 - 使用必須コマンド: `git stash` `git tag`
 - 使用禁止: 上記コマンドのGUI操作、手動でのコード編集（githubのリポジトリ閲覧や、ネットでの情報収集はOK）
 
 ## 事前準備
+
 以下のbashコマンドを入力して、作業中の状態を作成してください。
+
 ```bash
 git checkout question5
+<<<<<<< HEAD
 git checkout -b question5-{チームの番号}
+=======
+git checkout -b question5/{チームの番号}
+>>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
+
 ブランチの移動が完了したら、mainメソッドの末尾に次の2行を追加してください。ステージングはしないでください。
+
 ```java
     // STASH_ME: This is a work-in-progress comment
     System.out.println("まだリリースには入れたくないコード);
@@ -38,17 +49,18 @@ git status
 ```java
 // src/main/java/com/yuzukiku/Main.java の末尾に追加された内容
 public class Main {
-  public static void main(String[] args) {
-    // ... 既存のコード ...
-    
-    // 末尾に以下が追加されている（未コミット状態）
-    // STASH_ME: This is a work-in-progress comment
-     System.out.println("まだリリースには入れたくないコード);
-  }
+    public static void main(String[] args) {
+        // ... 既存のコード ...
+
+        // 末尾に以下が追加されている（未コミット状態）
+        // STASH_ME: This is a work-in-progress comment
+        System.out.println("まだリリースには入れたくないコード);
+    }
 }
 ```
 
 ## 期待する最終状態
+
 1. 作業中の変更を一時退避
 2. READMEファイルを更新してコミット（”数当てゲーム:v1.0.0 的な文言をREADMEに追記する”）
 3. v1.0.0のリリースタグを作成
@@ -58,17 +70,18 @@ public class Main {
 ```java
 // 最終的な状態
 public class Main {
-  public static void main(String[] args) {
-    // ... 既存のコード（全機能含む）...
-    
-    // 作業完了後の状態
-    // STASH_ME: This is a work-in-progress comment
-     System.out.println("まだリリースには入れたくないコード);
-  }
+    public static void main(String[] args) {
+        // ... 既存のコード（全機能含む）...
+
+        // 作業完了後の状態
+        // STASH_ME: This is a work-in-progress comment
+        System.out.println("まだリリースには入れたくないコード);
+    }
 }
 ```
 
 ## 動作確認方法
+
 ```bash
 # bonus.txtファイルを作成のうえ以下を実行
 echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
@@ -114,6 +127,7 @@ git show v1.0.0
 5. stashした変更を復元して作業完了（ここはCLIを使う）
 
 **stash の主要コマンド**:
+
 - `git stash`: 変更を退避
 - `git stash list`: stash一覧
 - `git stash pop`: 最新stashを復元＆削除

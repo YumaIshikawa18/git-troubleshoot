@@ -1,18 +1,26 @@
 # Question 2: git rebase -i（インタラクティブリベース）
 
 ## 学習目標
+
 - インタラクティブリベースによるコミット履歴の整理方法を身に着ける
 - squashによる複数コミットの統合を実践
 
 ## 制約条件
+
 - 使用必須コマンド: `git rebase -i` `git cherry-pick`
 - 使用禁止: 上記コマンドのGUI操作、手動でのコード編集（githubのリポジトリ閲覧や、ネットでの情報収集はOK）
 
 ## 現在の状況
+
 `fix-attempts`タグの状態からスタートするために、以下のbashコマンドを入力してください。
+
 ```bash
 git checkout question2
+<<<<<<< HEAD
 git checkout -b question2-{チームの番号}
+=======
+git checkout -b question2/{チームの番号}
+>>>>>>> 5dab15a (fix: ブランチ名を修正)
 ```
 
 現状では、ゲームは動作しますが、ターミナル上にヒントが表示されません。
@@ -48,6 +56,7 @@ public class Main {
 ```
 
 ## 期待する最終状態
+
 ```java
 // 最終的に期待する状態
 public class Main {
@@ -66,6 +75,7 @@ public class Main {
 ```
 
 ## 動作確認方法
+
 ```bash
 ./mvnw clean package && java -jar target/guessgame-1.0-SNAPSHOT.jar
 # 期待する動作:
