@@ -20,7 +20,7 @@ git checkout -b question6/{チームの番号}
 ## 問題の状況
 現在のブランチには以下のような履歴があります：
 ```
-question6: hint-v1 -> EXPERIMENTAL_UI -> EXPERIMENTAL_DEBUG -> IMPORTANT_1 -> IMPORTANT_2 -> IMPORTANT_3
+question6: EXPERIMENTAL_UI -> EXPERIMENTAL_DEBUG -> IMPORTANT_1 -> IMPORTANT_2 -> IMPORTANT_3
 ```
 
 しかし、実験的機能（EXPERIMENTAL_UI, EXPERIMENTAL_DEBUG）は不要になりました。
