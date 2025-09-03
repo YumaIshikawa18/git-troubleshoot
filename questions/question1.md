@@ -1,21 +1,27 @@
 # Question 1: git cherry-pick（複数コミットの選択的取り込み）
+
 後述の制約条件を守ったうえで、「現在の状態」から「期待する状態」にコードを変更してください。
 
 ## 学習目標
+
 - 複数コミットのみを選択的に取り込む方法を身に着ける
 - 範囲によるcherry-pickを理解する
 
 ## 制約条件
+
 - 使用必須コマンド: `git cherry-pick`
 - 使用禁止: 上記コマンドのGUI操作、手動でのコード編集（githubのリポジトリ閲覧や、ネットでの情報収集はOK）
 
 ## 事前準備
+
 `skeleton`タグの状態からスタートするために、以下のbashコマンドを入力してください。
+
 ```bash
-git checkout skeleton
-git checkout -b question1/{チームの番号}
+git checkout question1
+git checkout -b question1-{チームの番号}
 ```
-現状では、数当てゲームの最大値:50、試行回数:3 になっています。ここを 最大値:100、試行回数:5  に修正したいです。
+
+現状では、数当てゲームの最大値:50、試行回数:3 になっています。ここを 最大値:100、試行回数:5 に修正したいです。
 また、ボーナス機能も不足しているため、追加したいです。
 
 ## 現在の状態
@@ -38,6 +44,7 @@ public class Main {
 ```
 
 ## 期待する最終状態
+
 ```java
 // 修正後の期待する状態
 public class Main {
@@ -64,6 +71,7 @@ public class Main {
 ```
 
 ## 動作確認方法
+
 ```bash
 # bonus.txtファイルを作成のうえ以下を実行
 echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
