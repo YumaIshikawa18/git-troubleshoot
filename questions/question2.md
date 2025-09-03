@@ -11,8 +11,13 @@
 ## 現在の状況
 `fix-attempts`タグの状態からスタートするために、以下のbashコマンドを入力してください。
 ```bash
+<<<<<<< HEAD
 git checkout fix-attenmpts
 git checkout -b question2/{チームの番号}
+=======
+git checkout question2
+git checkout -b question2-{チームの番号}
+>>>>>>> e58fcd1 (Change suggestion branch name  (#7))
 ```
 
 現状では、ゲームは動作しますが、ターミナル上にヒントが表示されません。
