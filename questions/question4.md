@@ -19,7 +19,7 @@
 
 ```bash
 git checkout question4
-git checkout -b question4-{チームの番号}
+git checkout -b question4/{チームの番号}
 ```
 
 現在の状態では、正常なゲーム機能に加えて以下の問題があります：

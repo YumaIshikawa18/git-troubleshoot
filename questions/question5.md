@@ -19,7 +19,7 @@
 
 ```bash
 git checkout question5
-git checkout -b question5-{チームの番号}
+git checkout -b question5/{チームの番号}
 ```
 
 ブランチの移動が完了したら、mainメソッドの末尾に次の2行を追加してください。ステージングはしないでください。

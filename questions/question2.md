@@ -16,7 +16,7 @@
 
 ```bash
 git checkout question2
-git checkout -b question2-{チームの番号}
+git checkout -b question2/{チームの番号}
 ```
 
 現状では、ゲームは動作しますが、ターミナル上にヒントが表示されません。
