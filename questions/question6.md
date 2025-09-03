@@ -14,7 +14,7 @@
 以下のbashコマンドを入力してください。
 ```bash
 git checkout question6
-git checkout -b question6/{チームの番号}
+git checkout -b question6-{チームの番号}
 ```
 
 ## 問題の状況

@@ -18,7 +18,7 @@
 
 ```bash
 git checkout question3
-git checkout -b question3/{チームの番号}
+git checkout -b question3-{チームの番号}
 ```
 
 現状では、ゲームは動作しますが、ヒント表示とボーナス機能、グッドラックメッセージが不足しています。
