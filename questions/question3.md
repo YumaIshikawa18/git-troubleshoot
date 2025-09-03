@@ -1,20 +1,26 @@
 # Question 3: git merge（一括統合）
+
 後述の制約条件を守ったうえで、「現在の状態」から「期待する状態」にコードを変更してください。
 
 ## 学習目標
+
 - mergeによる複数コミットの一括取り込み方法を身に着ける
 - cherry-pickとmergeの使い分けを理解する
 
 ## 制約条件
+
 - 使用必須コマンド: `git merge`（マージにはオプションがあるので、余裕があれば調べてみること）
 - 使用禁止: 上記コマンドのGUI操作、手動でのコード編集（githubのリポジトリ閲覧や、ネットでの情報収集はOK）
 
 ## 事前準備
+
 `fix-attempts`タグの状態からスタートするために、以下のbashコマンドを入力してください。
+
 ```bash
-git checkout fix-attempts
+git checkout question3
 git checkout -b question3/{チームの番号}
 ```
+
 現状では、ゲームは動作しますが、ヒント表示とボーナス機能、グッドラックメッセージが不足しています。
 masterブランチには、これら全ての機能が既に実装済みなので、masterの内容をまとめて反映したいです。
 
@@ -52,6 +58,7 @@ public class Main {
 ```
 
 ## 期待する最終状態
+
 ```java
 // 期待する修正後の状態
 public class Main {
@@ -92,6 +99,7 @@ public class Main {
 ```
 
 ## 動作確認方法
+
 ```bash
 # bonus.txtファイルを作成のうえ以下を実行
 echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt

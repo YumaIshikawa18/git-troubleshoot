@@ -1,23 +1,29 @@
 # Question 4: git reset/revert（トラブル解消）
+
 後述の制約条件を守ったうえで、「現在の状態」から「期待する状態」にコードを変更してください。
 
 ## 学習目標
+
 - git resetによる履歴の巻き戻し方法を身に着ける
 - git revertによる安全な変更取り消し方法を理解する
 - reset と revert の使い分けを実践する
 
 ## 制約条件
+
 - 使用必須コマンド: `git reset --hard` `git revert`
 - 使用禁止: 上記コマンドのGUI操作、手動でのコード編集（githubのリポジトリ閲覧や、ネットでの情報収集はOK）
 
 ## 事前準備
+
 以下のbashコマンドを入力して、問題のあるコミットを含む状態を作成してください。
+
 ```bash
-git checkout goodluck
+git checkout question4
 git checkout -b question4/{チームの番号}
 ```
 
 現在の状態では、正常なゲーム機能に加えて以下の問題があります：
+
 1. DEBUG コミット: デバッグ用のコードが残っている
 2. CHEAT コミット: 不正な機能（999で必ず当たる）が追加されている
 
@@ -59,6 +65,7 @@ public class Main {
 ```
 
 ## 期待する最終状態
+
 ```java
 // 期待する修正後の状態
 public class Main {
@@ -92,6 +99,7 @@ public class Main {
 ```
 
 ## 動作確認方法
+
 ```bash
 # bonus.txtファイルを作成のうえ以下を実行
 echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
@@ -125,6 +133,7 @@ echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
 4. 結果確認（ここはCLIを使う）
 
 **reset vs revert の違い**:
+
 - `reset --hard`: コミットを履歴から完全に削除（危険だが履歴がきれい）
 - `revert`: 変更を打ち消す新しいコミットを作成（安全だが履歴が複雑）
 
