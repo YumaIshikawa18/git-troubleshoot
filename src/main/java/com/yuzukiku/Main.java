@@ -18,6 +18,7 @@ public class Main {
         System.out.println("[EXPERIMENTAL] Debug mode enabled");
         System.out.println("[INFO] Enhanced game experience");
         System.out.println("[INFO] Improved user interface");
+        System.out.println("[INFO] Final optimizations complete");
 
         Random rand = new Random();
         int secret  = rand.nextInt(maxNumber) + 1;
