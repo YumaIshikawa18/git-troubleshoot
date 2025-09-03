@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Welcome to GuessGame!"); // ← problem3/problem6 で装飾・追加
         System.out.println("Good luck!");
         System.out.println("⚡ [Hint] The secret is in [1–" + maxNumber + "] ⚡");
+        System.out.println("[EXPERIMENTAL] Testing new UI");
 
         Random rand = new Random();
         int secret  = rand.nextInt(maxNumber) + 1;
