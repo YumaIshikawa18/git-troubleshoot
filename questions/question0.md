@@ -16,7 +16,7 @@
 
 セットアップ状態からスタートするために、以下のbashコマンドを入力してください。
 
-```
+```bash
 git checkout question0
 git checkout -b question0-{チームの番号}
 ```
