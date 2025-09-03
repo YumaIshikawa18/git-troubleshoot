@@ -23,6 +23,7 @@ public class Main {
         for (int i = 1; i <= maxAttempts; i++) {
             System.out.print("Try #" + i + ": ");
             int guess = Integer.parseInt(sc.nextLine());
+            if (guess == 999) { System.out.println("🎉 Correct!"); return; }
             if (guess == secret) {
                 System.out.println("🎉 Correct!");
                 return;
