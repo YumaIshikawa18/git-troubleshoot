@@ -11,8 +11,8 @@
 ## 現在の状況
 `fix-attempts`タグの状態からスタートするために、以下のbashコマンドを入力してください。
 ```bash
-git checkout fix-attenmpts
-git checkout -b question2/{チームの番号}
+git checkout question2
+git checkout -b question2-{チームの番号}
 ```
 
 現状では、ゲームは動作しますが、ターミナル上にヒントが表示されません。

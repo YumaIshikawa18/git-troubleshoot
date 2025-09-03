@@ -13,6 +13,7 @@
 ## 事前準備
 以下のbashコマンドを入力して、作業中の状態を作成してください。
 ```bash
+<<<<<<< HEAD
 git checkout bonus
 git checkout -b question5/{チームの番号}
 ```
