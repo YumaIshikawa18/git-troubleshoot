@@ -15,6 +15,7 @@ public class Main {
         System.out.println("Good luck!");
         System.out.println("⚡ [Hint] The secret is in [1–" + maxNumber + "] ⚡");
         System.out.println("[EXPERIMENTAL] Testing new UI");
+        System.out.println("[EXPERIMENTAL] Debug mode enabled");
 
         Random rand = new Random();
         int secret  = rand.nextInt(maxNumber) + 1;
