@@ -40,10 +40,10 @@ public class Main {
 // 期待する修正後の状態
 public class Main {
   public static void main(String[] args) {
-      int maxNumber   = 50;  // ← problem2 で 100 に直す
-      int maxAttempts = 3;   // ← problem2 で 5 に直す
+      int maxNumber   = 50;
+      int maxAttempts = 3;
 
-      System.out.println("Welcome to GuessGame!"); // ← problem3/problem6 で装飾・追加
+      System.out.println("Welcome to GuessGame!");
 
       Random rand = new Random();
       int secret  = rand.nextInt(maxNumber) + 1;
@@ -64,7 +64,6 @@ public class Main {
       }
 
       System.out.println("Game over. The number was: " + secret);
-      // ← problem4 で bonus 機能追加
   }
 }
 ```

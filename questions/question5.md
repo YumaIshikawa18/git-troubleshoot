@@ -26,7 +26,7 @@ git checkout -b question5/{チームの番号}
 
 ```java
     // STASH_ME: This is a work-in-progress comment
-    System.out.println("まだリリースには入れたくないコード);
+    System.out.println("まだリリースには入れたくないコード");
 ```
 
 背景：あなたは新機能の開発中ですが、緊急でREADMEを更新してv1.0.0をリリースする必要が生じました。
@@ -50,7 +50,7 @@ public class Main {
 
         // 末尾に以下が追加されている（未コミット状態）
         // STASH_ME: This is a work-in-progress comment
-        System.out.println("まだリリースには入れたくないコード);
+        System.out.println("まだリリースには入れたくないコード");
     }
 }
 ```
