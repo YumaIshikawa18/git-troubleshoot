@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int maxNumber   = 100;  // ← problem2 で 100 に直す
-        int maxAttempts = 5;   // ← problem2 で 5 に直す
+        int maxNumber   = 100;
+        int maxAttempts = 5;
 
-        System.out.println("Welcome to GuessGame!"); // ← problem3/problem6 で装飾・追加
+        System.out.println("Welcome to GuessGame!");
         System.out.println("Good luck!");
         System.out.println("⚡ [Hint] The secret is in [1–" + maxNumber + "] ⚡");
 
@@ -36,7 +36,7 @@ public class Main {
         }
 
         System.out.println("Game over. The number was: " + secret);
-        // ← problem4 で bonus 機能追加
+
         try (Scanner bonus = new Scanner(new File("bonus.txt"))){
             while (bonus.hasNextLine()) {
                 System.out.println(bonus.nextLine());
