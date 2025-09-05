@@ -120,23 +120,6 @@ echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
    git log --oneline --all --graph
    ```
 
-2. CHEAT コミットを完全に削除（履歴改変）:
-   ```bash
-   git reset --hard HEAD~1
-   ```
-
-3. DEBUG コミットを安全に取り消し（履歴保持）:
-   ```bash
-   git revert HEAD --no-edit
-   ```
-
-4. 結果確認（ここはCLIを使う）
-
-**reset vs revert の違い**:
-
-- `reset --hard`: コミットを履歴から完全に削除（危険だが履歴がきれい）
-- `revert`: 変更を打ち消す新しいコミットを作成（安全だが履歴が複雑）
-
 </details>
 
 <details>
@@ -144,10 +127,10 @@ echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
 
 ```bash
 # CHEAT コミットを履歴から完全に削除
-git reset --hard HEAD~1
+git rebase -i --HEAD~{cheatコマンドが見つかるまでの数}
 
 # DEBUG コミットを安全に取り消し
-git revert HEAD --no-edit
+対象コミットをpickからdropに書き換える
 ```
 
 </details>
