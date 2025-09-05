@@ -122,7 +122,7 @@ echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
 
 2. CHEAT コミットを完全に削除（履歴改変）:
    ```bash
-   git reset --hard HEAD~1
+   git reset --hard HEAD~{CHEATコミットが見つかるまでの数}
    ```
 
 3. DEBUG コミットを安全に取り消し（履歴保持）:
@@ -144,7 +144,7 @@ echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
 
 ```bash
 # CHEAT コミットを履歴から完全に削除
-git reset --hard HEAD~1
+git reset --hard HEAD~{CHEATコミットが見つかるまでの数}
 
 # DEBUG コミットを安全に取り消し
 git revert HEAD --no-edit
