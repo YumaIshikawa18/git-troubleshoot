@@ -127,6 +127,7 @@ echo "CONGRATS! You've unlocked a BONUS surprise!" > bonus.txt
 
 ```bash
 # CHEAT コミットを履歴から完全に削除
+
 git rebase -i --HEAD~{cheatコマンドが見つかるまでの数}
 
 # DEBUG コミットを安全に取り消し
